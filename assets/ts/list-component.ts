@@ -14,14 +14,16 @@ class ListComponent
     render(){
         this.nanobar.go(30);
         this.getProjects().then( projects =>{
-            let output = '' ;
+            
             fetch(this.templatePath)
             .then(response => response.text())
             .then(template => {
-               output = Mustache.render(template, {ProjectList:projects });
-               MainComponent.Container.innerHTML = output;
-            });   
-            this.nanobar.go(100);
+               MainComponent.Container.innerHTML = Mustache.render(template, {ProjectList:projects });
+               this.addEventHandlers();
+               this.nanobar.go(100);
+            });
+            
+            
         });
     }
     addEventHandlers(){
