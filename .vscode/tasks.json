@@ -1,0 +1,27 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "TS - Compile Project",
+            "type": "shell",
+            "command": "tsc -p c:/wamp/www/restapi/wp-content/plugins/aristonet-projects/assets/tsconfig.json",
+            "problemMatcher": [
+                "$tsc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "TS - Compile Project - Watch",
+            "type": "shell",
+            "command": "tsc -w -p c:/wamp/www/restapi/wp-content/plugins/aristonet-projects/assets/tsconfig.json",
+            "problemMatcher": [
+                "$tsc"
+            ]
+        }
+    ]
+}

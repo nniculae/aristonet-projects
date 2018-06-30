@@ -1,0 +1,92 @@
+[{
+    "id": 1730,
+    "date": "2018-06-27T09:14:42",
+    "date_gmt": "2018-06-27T09:14:42",
+    "guid": {
+        "rendered": "http:\/\/localhost\/restapi\/?post_type=project&#038;p=1730"
+    },
+    "modified": "2018-06-27T10:28:48",
+    "modified_gmt": "2018-06-27T10:28:48",
+    "slug": "web1",
+    "status": "publish",
+    "type": "project",
+    "link": "http:\/\/localhost\/restapi\/project\/web1\/",
+    "title": {
+        "rendered": "Web1"
+    },
+    "featured_media": 11,
+    "template": "",
+    "project-category": [192],
+    "project-tag": [193, 194],
+    "revisions": null,
+    "description": "Web 1 desc",
+    "release_date": "2018-06-29",
+    "featuredImageSrc": "http:\/\/localhost\/restapi\/wp-content\/uploads\/2018\/06\/kyte-zmeu.jpg",
+    "project_categories": [{
+        "term_id": 192,
+        "name": "Website",
+        "slug": "website",
+        "term_group": 0,
+        "term_taxonomy_id": 192,
+        "taxonomy": "project-category",
+        "description": "",
+        "parent": 0,
+        "count": 1,
+        "filter": "raw"
+    }],
+    "project_tags": [{
+        "term_id": 193,
+        "name": "mobile",
+        "slug": "mobile",
+        "term_group": 0,
+        "term_taxonomy_id": 193,
+        "taxonomy": "project-tag",
+        "description": "",
+        "parent": 0,
+        "count": 1,
+        "filter": "raw"
+    }, {
+        "term_id": 194,
+        "name": "responsive",
+        "slug": "responsive",
+        "term_group": 0,
+        "term_taxonomy_id": 194,
+        "taxonomy": "project-tag",
+        "description": "",
+        "parent": 0,
+        "count": 1,
+        "filter": "raw"
+    }],
+    "_links": {
+        "self": [{
+            "href": "http:\/\/localhost\/restapi\/wp-json\/wp\/v2\/project\/1730"
+        }],
+        "collection": [{
+            "href": "http:\/\/localhost\/restapi\/wp-json\/wp\/v2\/project"
+        }],
+        "about": [{
+            "href": "http:\/\/localhost\/restapi\/wp-json\/wp\/v2\/types\/project"
+        }],
+        "wp:featuredmedia": [{
+            "embeddable": true,
+            "href": "http:\/\/localhost\/restapi\/wp-json\/wp\/v2\/media\/11"
+        }],
+        "wp:attachment": [{
+            "href": "http:\/\/localhost\/restapi\/wp-json\/wp\/v2\/media?parent=1730"
+        }],
+        "wp:term": [{
+            "taxonomy": "project-category",
+            "embeddable": true,
+            "href": "http:\/\/localhost\/restapi\/wp-json\/wp\/v2\/project-category?post=1730"
+        }, {
+            "taxonomy": "project-tag",
+            "embeddable": true,
+            "href": "http:\/\/localhost\/restapi\/wp-json\/wp\/v2\/project-tag?post=1730"
+        }],
+        "curies": [{
+            "name": "wp",
+            "href": "https:\/\/api.w.org\/{rel}",
+            "templated": true
+        }]
+    }
+}]

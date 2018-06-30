@@ -1,0 +1,5 @@
+http://localhost/restapi/wp-json/wp/v2/project-category?post=1730
+http://localhost/restapi/wp-json/wp/v2/project/1730
+http://localhost/restapi/wp-json/wp/v2/types/project
+http://localhost/restapi/wp-json/wp/v2/media/11
+http://localhost/restapi/wp-json/wp/v2/project-tag?post=1730
