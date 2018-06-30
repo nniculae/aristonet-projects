@@ -3,4 +3,4 @@ node_modules/
 
 # ignore composer vendor directory
 /vendor
-/js
+/assets/js
