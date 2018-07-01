@@ -6,11 +6,11 @@
 <hr>
 <div class="work-list" >
     {{#ProjectList}}
-    <div class="list-item" style="margin-bottom:50px">
+    <div class="list-item">
 
         <img class="project-featured-image" src="{{featuredImageSrc}}">
-        <h1> {{title.rendered}}</h1>
-         <h3>{{excerpt_list}}</h3>   
+        <h1 class="project-title"> {{title.rendered}}</h1>
+        <h3 class="excerpt-list">{{excerpt_list}}</h3>   
         <ul class="work-type">
             {{#project_categories}}
             <li>{{name}}</li>

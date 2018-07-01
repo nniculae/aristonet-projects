@@ -17,6 +17,7 @@ class ResponseModifier{
         $response->data['excerpt_list'] = get_post_meta($id,'excerpt_list', true);
         $response->data['excerpt_single'] = get_post_meta($id,'excerpt_single', true);
         $response->data['website_link'] = get_post_meta($id,'website_link', true);
+        $response->data['client_reference'] = get_post_meta($id,'client_reference', true);
         
         
         // featured image

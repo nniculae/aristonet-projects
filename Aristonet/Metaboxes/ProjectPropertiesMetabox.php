@@ -22,6 +22,11 @@ class ProjectPropertiesMetabox {
 			'type' => 'textarea',
 		),
 		array(
+			'label' => 'Client reference',
+			'id' => 'client_reference',
+			'type' => 'textarea',
+		),
+		array(
 			'label' => 'Website Link',
 			'id' => 'website_link',
 			'type' => 'text',

@@ -31,8 +31,17 @@ abstract class AristonetProjects{
         new Aristonet\Taxonomies\ProjectTag();
         new Aristonet\Rest\ResponseModifier();
         new Aristonet\Shortcodes\ShowProjects();
-        new Aristonet\ScriptsLoader();
+        
         new Aristonet\Settings\Settings();
 	}
 }
 AristonetProjects::Main();
+
+
+add_action( 'template_redirect', function(){
+        $pageName = get_option('aristonet_projects_shortcode_post_slug');
+        if(is_page($pageName)){
+           new Aristonet\ScriptsLoader();   
+        }
+});
+

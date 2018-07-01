@@ -7,10 +7,11 @@ class ScriptsLoader{
         //add_filter( 'script_loader_tag', 'addModuleToScript', 10, 3 );   
     }
     public function loadScripts(){
-        
-        wp_enqueue_script('nanobar-js',Aristonet_Projects_Plugin_Dir_Url . 'assets/node_modules/nanobar/nanobar.js', [ ], null, true );
 
         wp_enqueue_style('nanobar-css', Aristonet_Projects_Plugin_Dir_Url . 'assets/css/nanobar.css');
+        wp_enqueue_style('aristonet-projects-css', Aristonet_Projects_Plugin_Dir_Url . 'assets/css/projects.css');
+
+        wp_enqueue_script('nanobar-js',Aristonet_Projects_Plugin_Dir_Url . 'assets/node_modules/nanobar/nanobar.js', [ ], null, true );
         wp_enqueue_script( 'mustache', Aristonet_Projects_Plugin_Dir_Url . 'assets/node_modules/mustache/mustache.js', [], null, true );
         wp_enqueue_script( 'aristonet-projects-js', Aristonet_Projects_Plugin_Dir_Url . 'assets/js/projects.js', ['nanobar-js','mustache'], null, true );
         

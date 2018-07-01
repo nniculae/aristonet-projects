@@ -10,6 +10,10 @@ class DetailComponent {
         });
     }
     render() {
+        window.scroll({
+            top: 0,
+            behavior: "smooth"
+          });
         this.nanobar.go(30);
         this
             .getProject()

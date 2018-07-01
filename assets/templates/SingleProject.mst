@@ -3,7 +3,9 @@
 <button ><a style="color:white" href="{{website_link}}">View website</a></button>
 <img src="{{featuredImageSrc}}">
 <p>{{{description}}}</p>
-
+<div  style="background:green;color:white">
+{{{client_reference}}}
+</div>
 <ul>
     {{#project_tags}}
     <li>{{name}}</li>
