@@ -2,7 +2,6 @@ class Startup {
     public static main(): number {
         MainComponent.Container = document.querySelector('#aristonet-projects');
         new MainComponent(location.pathname);
-        //fetchInsert(location.pathname);
         window.addEventListener('popstate', e=>{
             new MainComponent(location.pathname);
         });

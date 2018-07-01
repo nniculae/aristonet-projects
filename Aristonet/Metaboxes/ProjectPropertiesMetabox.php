@@ -12,6 +12,21 @@ class ProjectPropertiesMetabox {
 			'type' => 'wysiwyg',
 		),
 		array(
+			'label' => 'Excerpt List',
+			'id' => 'excerpt_list',
+			'type' => 'textarea',
+		),
+		array(
+			'label' => 'Excerpt Single',
+			'id' => 'excerpt_single',
+			'type' => 'textarea',
+		),
+		array(
+			'label' => 'Website Link',
+			'id' => 'website_link',
+			'type' => 'text',
+		),
+		array(
 			'label' => 'Release Date',
 			'id' => 'release_date',
 			'type' => 'date',
@@ -50,6 +65,15 @@ class ProjectPropertiesMetabox {
 					wp_editor($meta_value, $meta_field['id']);
 					$input = ob_get_contents();
 					ob_end_clean();
+					break;
+				case 'textarea':
+					$input = sprintf(
+						'<textarea %s id="%s" name="%s">%s</textarea>',
+						$meta_field['type'] !== 'color' ? 'style="width: 100%"' : '',
+						$meta_field['id'],
+						$meta_field['id'],
+						$meta_value
+					);	
 					break;
 				default:
 					$input = sprintf(

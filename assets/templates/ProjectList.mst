@@ -1,3 +1,25 @@
-{{#ProjectList}} 
-    <h1><a href="{{link}}">{{title.rendered}}</a></h1>
-{{/ProjectList}}
+<div class="project-header">
+    <h1 class="title">Our recent work</h1>
+    <h2 clss="subtitle">Aristonet is a boutique design agency with more than 14 years experience sowing innovative ideas and creating beautiful
+        hand-made website design, custom logo design and branding.</h2>
+</div>
+<hr>
+<div class="work-list" >
+    {{#ProjectList}}
+    <div class="list-item" style="margin-bottom:50px">
+
+        <img class="project-featured-image" src="{{featuredImageSrc}}">
+        <h1> {{title.rendered}}</h1>
+         <h3>{{excerpt_list}}</h3>   
+        <ul class="work-type">
+            {{#project_categories}}
+            <li>{{name}}</li>
+            {{/project_categories}}
+        </ul>
+        <button>
+            <a style="color:white" href="{{link}} ">Case study</a>
+        </button>
+    </div>
+    {{/ProjectList}}
+
+</div>
