@@ -20,7 +20,7 @@ register_activation_hook( __FILE__, function(){
  });
 
  add_action('init', function(){
-        add_rewrite_rule('project/([^/]*)/?', 'index.php?pagename=proiecte','top');
+        add_rewrite_rule('projects/([^/]*)/?', 'index.php?pagename=projects','top');
  },999,0);
 
 abstract class AristonetProjects{

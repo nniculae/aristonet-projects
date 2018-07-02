@@ -16,13 +16,13 @@ class MainComponent {
     prepareRoutes(){
         let restUrl : string = aristonet_projects_php_vars.rest_url; // http://localhost/restapi/wp-json
         let slug : string = aristonet_projects_php_vars.shortcode_location; // proiecte
-        this.routeList =  `${restUrl}wp/v2/project/`; 
+        this.routeList =  `${restUrl}wp/v2/${slug}/`; 
         var matchArray = this.locationPath
             .substring(0, this.locationPath.length - 1)
             .match(/.*\/(.*)$/);
         var lastSlug = matchArray[1];
         if (slug !== lastSlug){
-            this.routeSingle = `${restUrl}wp/v2/project/?slug=${lastSlug}`;
+            this.routeSingle = `${restUrl}wp/v2/${slug}/?slug=${lastSlug}`;
         }else{
             this.routeSingle = null;
         }
