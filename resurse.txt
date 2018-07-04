@@ -6,3 +6,6 @@ osts: sitename.com/wp-json/wp/v2/posts?slug=post-slug
 Pages: sitename.com/wp-json/wp/v2/pages?slug=page-slug
 
 Custom post type: sitename.com/wp-json/wp/v2/POST_TYPE?slug=post-slug
+
+https://www.linkedin.com/learning/wordpress-rest-api?trk=course_title&upsellOrderOrigin=trk_default_learning
+https://www.freecoursesonline.us/

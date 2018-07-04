@@ -27,6 +27,11 @@ class ResponseModifier{
         $response->data['project_categories'] = wp_get_post_terms($id,'project-category');
         $response->data['project_tags'] = wp_get_post_terms($id,'project-tag');
 
+
+        $response->data['nextProject'] = get_next_post();
+       
+
+        
         return $response;
        
     }
