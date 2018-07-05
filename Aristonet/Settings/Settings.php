@@ -57,6 +57,12 @@ class Settings {
 				'type' => 'text',
 				'section' => 'projectssettings_section',
 			),
+			array(
+				'label' => 'Projects per page',
+				'id' => 'aristonet_projects_per_page',
+				'type' => 'number',
+				'section' => 'projectssettings_section',
+			),
 			
 		);
 		foreach( $fields as $field ){

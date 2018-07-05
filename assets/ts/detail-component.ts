@@ -18,7 +18,7 @@ class DetailComponent {
         this
             .getProject()
             .then(projects => {
-               console.log(projects);
+            //    console.log(projects);
               let project = projects[0]  ;
               this.nanobar.go(60);
                     let output = '' ;
