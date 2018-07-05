@@ -26,13 +26,14 @@ class ScriptsLoader{
               'templatesUrl' => Aristonet_Projects_Plugin_Dir_Url . 'assets/templates',
               'templateName' => get_option('aristonet_projects_template_name', 'ProjectList.mst'),
               'singleProjectTemplateName' =>get_option('aristonet_project_template_name', 'SingleProject.mst'),
-              'shortcode_location' => get_option('aristonet_projects_shortcode_post_slug', 'project' )
+              'shortcode_location' => get_option('aristonet_projects_shortcode_post_slug', 'project' ),
+              'projects_per_page' => get_option('aristonet_projects_per_page', 10 )
             ]
         );
 
     }
    
- 
+ //aristonet_projects_per_page
     // public function addModuleToScript( $tag, $handle, $src ) {
 
     //     if ( 'main-component' === $handle ) {

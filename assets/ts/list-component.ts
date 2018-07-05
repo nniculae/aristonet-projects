@@ -48,7 +48,7 @@ class ListComponent
             .then(template => {
                MainComponent.Container.innerHTML = Mustache.render(template, {ProjectList:projects });
                this.addEventHandlers();
-               new PaginationComponent(_this.totalObjects,_this.totalPages);
+              // new PaginationComponent(_this.totalObjects,_this.totalPages);
                this.nanobar.go(100);
             });
             

@@ -17,28 +17,22 @@ class MainComponent {
     }
     prepareRoutes(){
        
-        let perPage = 1; // get from settings 
-
-        
-        
-        let restUrl : string = aristonet_projects_php_vars.rest_url; // http://localhost/restapi/wp-json
-        let slug : string = aristonet_projects_php_vars.shortcode_location; // proiecte
+        let perPage = aristonet_projects_php_vars.projects_per_page;
+        let restUrl : string = aristonet_projects_php_vars.rest_url; 
+        let slug : string = aristonet_projects_php_vars.shortcode_location;
 
         if(this.locationPath.indexOf('page') !== -1){
-
-            // /restapi/projects/page/2/
-    
-        
-        let splitPath = this.locationPath.split('/');
-        let pageNumber =  splitPath[splitPath.length-2];
-          // go to list
-         this.routeSingle = null;
-        this.routeList =  `${restUrl}wp/v2/${slug}/?per_page=${perPage}&page=${pageNumber}`;
+       
+            let splitPath = this.locationPath.split('/');
+            let pageNumber =  splitPath[splitPath.length-2];
+            // go to list
+            this.routeSingle = null;
+            this.routeList =  `${restUrl}wp/v2/${slug}/?per_page=${perPage}&page=${pageNumber}`;
             return;
         }
 
 
-        this.routeList =  `${restUrl}wp/v2/${slug}/?per_page=1`; 
+        this.routeList =  `${restUrl}wp/v2/${slug}/?per_page=${perPage}`; 
         var matchArray = this.locationPath
             .substring(0, this.locationPath.length - 1)
             .match(/.*\/(.*)$/);

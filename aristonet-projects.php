@@ -17,6 +17,8 @@ define('Aristonet_Projects_Plugin_Dir_Url',  plugin_dir_url(__FILE__) );
 register_activation_hook( __FILE__, function(){
         update_option('aristonet_projects_template_name', 'ProjectList.mst');
         update_option('aristonet_project_template_name', 'SingleProject.mst');
+        update_option('aristonet_projects_per_page', 10);
+   
  });
 
  add_action('init', function(){
